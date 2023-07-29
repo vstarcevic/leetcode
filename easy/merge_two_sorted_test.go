@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestMergeTwoSorted(t *testing.T) {
+func TestMergeTwoSorted1(t *testing.T) {
 
 	// Arange
 	list111 := &ListNode{Val: 4, Next: nil}
