@@ -108,12 +108,10 @@ func myAtoi(s string) int {
 			continue
 		}
 
-		// letter a-z
+		// letter a-z and other chars
 		if lastChar == Number {
 			break
-		} else if lastChar == None {
-			return 0
-		} else if lastChar == Sign {
+		} else if lastChar == None || lastChar == Sign {
 			return 0
 		}
 
