@@ -18,21 +18,11 @@
 
 package easy
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import m "leetcode/pkg/model"
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+func mergeTwoLists(list1 *m.ListNode, list2 *m.ListNode) *m.ListNode {
 
-	result := &ListNode{}
+	result := &m.ListNode{}
 	current := result
 
 	for list1 != nil && list2 != nil {

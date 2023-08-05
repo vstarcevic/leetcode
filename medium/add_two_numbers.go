@@ -10,13 +10,10 @@
 
 package medium
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import m "leetcode/pkg/model"
 
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	result := &ListNode{}
+func addTwoNumbers(l1 *m.ListNode, l2 *m.ListNode) *m.ListNode {
+	result := &m.ListNode{}
 	tmp := result
 	for l1 != nil || l2 != nil {
 		if l1 != nil {
@@ -29,9 +26,9 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		}
 		if tmp.Val > 9 {
 			tmp.Val -= 10
-			tmp.Next = &ListNode{Val: 1}
+			tmp.Next = &m.ListNode{Val: 1}
 		} else if l1 != nil || l2 != nil {
-			tmp.Next = &ListNode{}
+			tmp.Next = &m.ListNode{}
 		}
 		tmp = tmp.Next
 	}
