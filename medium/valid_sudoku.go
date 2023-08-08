@@ -54,7 +54,7 @@ func isValidSudoku(board [][]byte) bool {
 
 	mapRow := make(map[string]bool, 81)
 	mapCol := make(map[string]bool, 81)
-	mapSqr := make(map[string]bool, 270)
+	mapSqr := make(map[string]bool, 81)
 
 	for i := 0; i < len(board); i++ {
 
