@@ -73,8 +73,8 @@ func isValidSudoku(board [][]byte) bool {
 			mapRow[cellRow] = true
 
 			cellColumn := fmt.Sprintf("%v-%v", j, board[i][j])
-			// check col
 
+			// check col
 			if mapCol[cellColumn] {
 				return false
 			}
@@ -85,6 +85,7 @@ func isValidSudoku(board [][]byte) bool {
 			// in which squre is ?
 			cellSquare := fmt.Sprintf("%v-%v-%v", i/3, j/3, board[i][j])
 
+			// check square
 			if mapSqr[cellSquare] {
 				return false
 			}
