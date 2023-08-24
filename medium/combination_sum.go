@@ -27,10 +27,9 @@
 
 package medium
 
-var results [][]int = make([][]int, 0)
-
 func combinationSum(candidate []int, target int) [][]int {
 
+	var results [][]int = make([][]int, 0)
 	var curr []int = make([]int, 0)
 	var backtrack func(i int, curr []int, total int)
 
