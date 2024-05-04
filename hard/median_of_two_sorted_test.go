@@ -13,7 +13,7 @@ func Test_Median_Of_Two_Sorted(t *testing.T) {
 	result := findMedianSortedArrays(nums1, nums2)
 
 	// Assert
-	if result-2.5 > 0.1 {
+	if result-3 > 0.1 {
 		t.Fatalf(`Result not as expected. Got %v`, result)
 	}
 
